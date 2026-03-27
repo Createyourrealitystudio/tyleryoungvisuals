@@ -740,17 +740,24 @@ body.menu-open {
   margin-bottom: 8px;
 }
 
-.calendar-embed {
-  max-width: 800px;
-  margin: 0 auto;
-  border: 1px solid rgba(245, 221, 178, 0.08);
-  border-radius: 4px;
-  overflow: hidden;
-  background: rgba(245, 221, 178, 0.02);
+.booking-btn {
+  display: inline-block;
+  padding: 20px 64px;
+  background: var(--crimson);
+  color: var(--cream);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  margin-bottom: 40px;
 }
 
-.calendar-embed iframe {
-  display: block;
+.booking-btn:hover {
+  background: #c41400;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 40px rgba(168, 17, 0, 0.4);
 }
 
 .booking-contact {
