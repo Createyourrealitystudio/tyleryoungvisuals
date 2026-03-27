@@ -206,16 +206,6 @@ body.menu-open {
   text-align: center;
 }
 
-.hero-eyebrow {
-  font-family: var(--font-heading);
-  font-size: 13px;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  color: rgba(245, 221, 178, 0.4);
-  font-weight: 600;
-  margin-bottom: 16px;
-}
-
 .hero-title {
   font-family: var(--font-heading);
   font-weight: 900;
@@ -236,24 +226,25 @@ body.menu-open {
   font-weight: 300;
 }
 
-.hero-cta {
-  display: inline-block;
-  margin-top: 48px;
-  padding: 16px 48px;
-  background: var(--crimson);
-  color: var(--cream);
-  font-family: var(--font-heading);
-  font-size: 13px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  font-weight: 700;
+.hero-play {
+  margin-top: 40px;
+  width: 64px;
+  height: 64px;
+  background: none;
+  border: 2px solid rgba(245, 221, 178, 0.4);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   transition: all 0.3s;
+  color: var(--cream);
 }
 
-.hero-cta:hover {
-  background: #c41400;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 40px rgba(168, 17, 0, 0.4);
+.hero-play:hover {
+  border-color: var(--cream);
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(111, 5, 135, 0.3);
 }
 
 .scroll-indicator {
@@ -1042,9 +1033,9 @@ body.menu-open {
     font-size: 11px;
   }
 
-  .hero-cta {
-    padding: 14px 36px;
-    font-size: 12px;
+  .hero-play {
+    width: 52px;
+    height: 52px;
   }
 
   .brands-strip {
