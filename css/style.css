@@ -595,3 +595,157 @@ ul {
 .category-content .reveal:nth-child(4) { transition-delay: 0.2s; }
 .category-content .reveal:nth-child(5) { transition-delay: 0.25s; }
 .category-content .reveal:nth-child(6) { transition-delay: 0.3s; }
+
+/* ========================================
+   RESPONSIVE — TABLET (< 1024px)
+   ======================================== */
+
+@media (max-width: 1024px) {
+  .nav {
+    padding: 16px 24px;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: rgba(10, 11, 2, 0.98);
+    flex-direction: column;
+    padding: 100px 40px 40px;
+    gap: 24px;
+    transition: right 0.3s ease;
+    border-left: 1px solid rgba(245, 221, 178, 0.08);
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .section {
+    padding: 80px 32px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-item.featured {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .category-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 80px 32px;
+  }
+
+  .category-section.reverse {
+    direction: ltr;
+  }
+
+  .category-image-accent {
+    bottom: -12px;
+    right: -12px;
+    width: 35%;
+    height: 35%;
+  }
+
+  .category-section.reverse .category-image-accent {
+    right: -12px;
+    left: auto;
+  }
+
+  .about-section {
+    padding: 80px 32px;
+  }
+
+  .booking-section {
+    padding: 80px 32px;
+  }
+
+  .divider {
+    margin: 0 32px;
+  }
+
+  .footer {
+    padding: 40px 32px;
+  }
+}
+
+/* ========================================
+   RESPONSIVE — MOBILE (< 768px)
+   ======================================== */
+
+@media (max-width: 768px) {
+  .hero-title {
+    letter-spacing: 8px;
+  }
+
+  .hero-subtitle {
+    letter-spacing: 4px;
+    font-size: 11px;
+  }
+
+  .hero-play {
+    width: 52px;
+    height: 52px;
+  }
+
+  .section {
+    padding: 60px 20px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  .portfolio-item.featured {
+    grid-column: span 1;
+  }
+
+  .portfolio-item-overlay {
+    opacity: 1;
+    background: linear-gradient(180deg, transparent 50%, rgba(10,11,2,0.85) 100%);
+  }
+
+  .category-section {
+    padding: 60px 20px;
+    gap: 30px;
+  }
+
+  .category-number {
+    font-size: 60px;
+    margin-bottom: -20px;
+  }
+
+  .about-section {
+    padding: 60px 20px;
+  }
+
+  .booking-section {
+    padding: 60px 20px;
+  }
+
+  .calendar-embed iframe {
+    height: 500px;
+  }
+
+  .divider {
+    margin: 0 20px;
+  }
+
+  .footer {
+    padding: 32px 20px;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
