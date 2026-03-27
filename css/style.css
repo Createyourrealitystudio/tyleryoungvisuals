@@ -171,12 +171,20 @@ body.menu-open {
 .hero-video-bg {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgba(10,11,2,0.3) 0%, rgba(10,11,2,0.1) 40%, rgba(10,11,2,0.7) 80%, var(--dark-bg) 100%),
-    linear-gradient(135deg, var(--dark) 0%, #0d0e02 50%, rgba(111,5,135,0.15) 100%);
 }
 
-.hero-video-bg video {
+.hero-video-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(10,11,2,0.4) 0%, rgba(10,11,2,0.2) 40%, rgba(10,11,2,0.75) 80%, var(--dark-bg) 100%),
+    linear-gradient(135deg, transparent 0%, rgba(10,14,2,0.3) 50%, rgba(111,5,135,0.15) 100%);
+  z-index: 1;
+}
+
+.hero-video-bg video,
+.hero-video-bg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
