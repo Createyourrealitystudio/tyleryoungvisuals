@@ -51,6 +51,7 @@
     toggle.addEventListener('click', function () {
       toggle.classList.toggle('active');
       navLinks.classList.toggle('open');
+      document.body.classList.toggle('menu-open');
     });
 
     // Close menu when a link is clicked
@@ -58,9 +59,28 @@
       link.addEventListener('click', function () {
         toggle.classList.remove('active');
         navLinks.classList.remove('open');
+        document.body.classList.remove('menu-open');
       });
     });
   }
+
+  // ---- Parallax on Category Images ----
+  var categoryImages = document.querySelectorAll('.category-image-main');
+
+  function updateParallax() {
+    categoryImages.forEach(function (img) {
+      var rect = img.getBoundingClientRect();
+      var windowH = window.innerHeight;
+      if (rect.top < windowH && rect.bottom > 0) {
+        var progress = (windowH - rect.top) / (windowH + rect.height);
+        var offset = (progress - 0.5) * 30;
+        img.style.transform = 'translateY(' + offset + 'px)';
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateParallax, { passive: true });
+  updateParallax();
 
   // ---- Smooth Scroll for Anchor Links ----
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
