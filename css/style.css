@@ -18,9 +18,8 @@
   --blue: #1D98F5;
   --crimson: #A81100;
 
-  --font-display: 'Bebas Neue', sans-serif;
-  --font-heading: 'Barlow Condensed', sans-serif;
-  --font-body: 'Barlow', sans-serif;
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Inter', sans-serif;
 }
 
 html {
@@ -81,15 +80,16 @@ body.menu-open {
 }
 
 .nav-logo {
-  font-family: var(--font-display);
-  font-size: 24px;
-  letter-spacing: 4px;
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 6px;
   text-transform: uppercase;
   color: var(--cream);
 }
 
 .nav-logo span {
-  color: var(--crimson);
+  color: var(--purple);
 }
 
 .nav-links {
@@ -99,12 +99,11 @@ body.menu-open {
 }
 
 .nav-links a {
-  color: rgba(245, 221, 178, 0.5);
-  font-family: var(--font-heading);
-  font-size: 13px;
+  color: rgba(245, 221, 178, 0.6);
+  font-size: 12px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   transition: color 0.3s;
 }
 
@@ -218,30 +217,23 @@ body.menu-open {
 }
 
 .hero-title {
-  font-family: var(--font-display);
-  font-size: clamp(72px, 14vw, 160px);
-  letter-spacing: 8px;
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: clamp(56px, 10vw, 96px);
+  letter-spacing: 16px;
   text-transform: uppercase;
-  line-height: 0.9;
+  line-height: 0.95;
   color: var(--cream);
-  text-shadow: 0 4px 80px rgba(111, 5, 135, 0.2);
-}
-
-.hero-title span {
-  display: block;
-  color: var(--crimson);
-  font-size: 0.55em;
-  letter-spacing: 20px;
+  text-shadow: 0 4px 60px rgba(111, 5, 135, 0.3);
 }
 
 .hero-subtitle {
-  font-family: var(--font-heading);
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 8px;
   text-transform: uppercase;
-  color: rgba(245, 221, 178, 0.4);
-  margin-top: 24px;
-  font-weight: 400;
+  color: rgba(245, 221, 178, 0.5);
+  margin-top: 20px;
+  font-weight: 300;
 }
 
 .hero-cta {
@@ -323,7 +315,7 @@ body.menu-open {
   display: flex;
   align-items: center;
   gap: 24px;
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 18px;
   letter-spacing: 3px;
   color: rgba(245, 221, 178, 0.2);
@@ -368,12 +360,13 @@ body.menu-open {
 }
 
 .section-title {
-  font-family: var(--font-display);
-  font-size: clamp(36px, 5vw, 56px);
-  letter-spacing: 3px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(32px, 4vw, 48px);
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--cream);
-  line-height: 1;
+  margin-bottom: 20px;
 }
 
 .section-desc {
@@ -473,7 +466,7 @@ body.menu-open {
 }
 
 .portfolio-item-title {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 24px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -511,7 +504,7 @@ body.menu-open {
 
 .image-break-stat {
   display: block;
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: clamp(64px, 10vw, 120px);
   color: var(--cream);
   line-height: 1;
@@ -584,9 +577,10 @@ body.menu-open {
 }
 
 .category-number {
-  font-family: var(--font-display);
-  font-size: clamp(80px, 10vw, 130px);
-  color: rgba(111, 5, 135, 0.06);
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: clamp(80px, 10vw, 120px);
+  color: rgba(111, 5, 135, 0.08);
   line-height: 1;
   margin-bottom: -40px;
   position: relative;
@@ -594,9 +588,10 @@ body.menu-open {
 }
 
 .category-name {
-  font-family: var(--font-display);
-  font-size: clamp(32px, 4vw, 48px);
-  letter-spacing: 3px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(28px, 4vw, 42px);
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--cream);
   margin-bottom: 16px;
@@ -671,9 +666,10 @@ body.menu-open {
 }
 
 .about-quote {
-  font-family: var(--font-display);
-  font-size: clamp(28px, 4vw, 44px);
-  letter-spacing: 3px;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(24px, 4vw, 36px);
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--cream);
   max-width: 750px;
@@ -682,7 +678,7 @@ body.menu-open {
 }
 
 .about-quote em {
-  color: var(--crimson);
+  color: var(--purple);
   font-style: normal;
 }
 
@@ -708,7 +704,7 @@ body.menu-open {
 
 .stat-number {
   display: block;
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 48px;
   color: var(--cream);
   line-height: 1;
@@ -781,7 +777,7 @@ body.menu-open {
 }
 
 .booking-email {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 24px;
   letter-spacing: 2px;
   color: var(--cream);
@@ -809,16 +805,17 @@ body.menu-open {
 }
 
 .footer-logo {
-  font-family: var(--font-display);
-  font-size: 28px;
-  letter-spacing: 3px;
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 5px;
   text-transform: uppercase;
   color: var(--cream);
   margin-bottom: 12px;
 }
 
 .footer-logo span {
-  color: var(--crimson);
+  color: var(--purple);
 }
 
 .footer-tagline {
