@@ -82,16 +82,13 @@ body.menu-open {
 }
 
 .nav-logo {
-  font-family: var(--font-heading);
-  font-weight: 900;
-  font-size: 18px;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  color: var(--cream);
+  display: flex;
+  align-items: center;
 }
 
-.nav-logo span {
-  color: var(--purple);
+.nav-logo img {
+  height: 40px;
+  width: auto;
 }
 
 .nav-links {
@@ -808,17 +805,12 @@ body.menu-open {
 }
 
 .footer-logo {
-  font-family: var(--font-heading);
-  font-weight: 900;
-  font-size: 20px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: var(--cream);
   margin-bottom: 12px;
 }
 
-.footer-logo span {
-  color: var(--purple);
+.footer-logo img {
+  height: 48px;
+  width: auto;
 }
 
 .footer-tagline {
