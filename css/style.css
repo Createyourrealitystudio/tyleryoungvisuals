@@ -231,23 +231,25 @@ body.menu-open {
   font-weight: 300;
 }
 
-.hero-logo {
+.hero-play {
   margin-top: 40px;
-  display: inline-block;
-}
-
-.hero-logo img {
+  width: 64px;
   height: 64px;
-  width: auto;
-  opacity: 0.7;
-  filter: drop-shadow(0 2px 20px rgba(111, 5, 135, 0.3));
+  background: none;
+  border: 2px solid rgba(245, 221, 178, 0.4);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   transition: all 0.3s;
+  color: var(--cream);
 }
 
-.hero-logo img:hover {
-  opacity: 1;
-  filter: drop-shadow(0 4px 30px rgba(111, 5, 135, 0.5));
-  transform: scale(1.05);
+.hero-play:hover {
+  border-color: var(--cream);
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(111, 5, 135, 0.3);
 }
 
 .scroll-indicator {
@@ -1043,7 +1045,8 @@ body.menu-open {
     font-size: 11px;
   }
 
-  .hero-logo img {
+  .hero-play {
+    width: 52px;
     height: 52px;
   }
 
