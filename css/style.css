@@ -231,25 +231,25 @@ body.menu-open {
   font-weight: 300;
 }
 
-.hero-play {
+.hero-cta {
+  display: inline-block;
   margin-top: 40px;
-  width: 64px;
-  height: 64px;
-  background: none;
-  border: 2px solid rgba(245, 221, 178, 0.4);
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s;
+  padding: 16px 48px;
+  border: 1px solid rgba(245, 221, 178, 0.3);
   color: var(--cream);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  transition: all 0.3s;
 }
 
-.hero-play:hover {
-  border-color: var(--cream);
-  transform: scale(1.1);
-  box-shadow: 0 0 30px rgba(111, 5, 135, 0.3);
+.hero-cta:hover {
+  background: var(--crimson);
+  border-color: var(--crimson);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(168, 17, 0, 0.4);
 }
 
 .scroll-indicator {
@@ -1063,9 +1063,9 @@ body.menu-open {
     font-size: 11px;
   }
 
-  .hero-play {
-    width: 52px;
-    height: 52px;
+  .hero-cta {
+    padding: 14px 36px;
+    font-size: 12px;
   }
 
   .brands-strip {
