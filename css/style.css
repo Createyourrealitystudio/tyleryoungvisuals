@@ -745,18 +745,25 @@ body.menu-open {
   margin-bottom: 8px;
 }
 
+.booking-ctas {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
 .booking-btn {
   display: inline-block;
-  padding: 20px 64px;
+  padding: 18px 48px;
   background: var(--crimson);
   color: var(--cream);
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 6px;
+  font-size: 15px;
+  letter-spacing: 5px;
   text-transform: uppercase;
   transition: all 0.3s;
-  margin-bottom: 40px;
 }
 
 .booking-btn:hover {
@@ -765,8 +772,19 @@ body.menu-open {
   box-shadow: 0 8px 40px rgba(168, 17, 0, 0.4);
 }
 
+.booking-btn-outline {
+  background: transparent;
+  border: 1px solid rgba(245, 221, 178, 0.2);
+}
+
+.booking-btn-outline:hover {
+  background: rgba(245, 221, 178, 0.08);
+  border-color: var(--cream);
+  box-shadow: none;
+}
+
 .booking-contact {
-  margin-top: 40px;
+  margin-top: 0;
 }
 
 .booking-contact p {
